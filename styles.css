@@ -29,6 +29,7 @@
 
 .bx {
     display: flex;
+    height: 100vh;
 }
 
 /* --- STYLES --- */
@@ -145,6 +146,18 @@
     height: 300px;
 
     border-radius: 10px;
+}
+
+.infoworld {
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.infoworld .world-textarea p {
+    display: flex;
+    flex-direction: column;
 }
 
 
