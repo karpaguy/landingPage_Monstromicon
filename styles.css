@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Syne+Tactile&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@400;900&family=Syne+Tactile&display=swap');
+@import url('https://fonts.cdnfonts.com/css/kawashiro-gothic');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+.background {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.2) 40%,
+        rgba(0, 0, 0, 0.4) 48%,     
+        rgba(0, 0, 0, 0.1) 60%
+      ), url('./Images/landscape.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- BOXES --- */
+
+.bx {
+    display: flex;
+}
+
+/* --- STYLES --- */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 8px 18px;
+    background: rgb(151,223,118);
+    background: linear-gradient(90deg, rgba(151,223,118,0.8) 0%, rgba(120,219,75,0.1) 45%, rgba(255,215,0,0.8) 100%);
+
+    box-shadow: 0px 1px 3px 3px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin: 8px;
+}
+
+.navbar .header-logo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.navbar .header-logo p {
+    font-size: 24px;
+    font-style: italic;
+    margin-left: 6px;
+}
+
+.navbar .header-logo img {
+    width: 32px;
+    height: 32px;
+}
+
+.navbar .header-links {
+    display: flex;
+    gap: 16px;
+}
+
+.navbar .header-links a {
+    font-family: 'Syne Tactile', sans-serif;
+    font-size: 18px;
+
+    text-decoration: none;
+}
+
+.hero {
+    height: 100vh;
+    width: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    padding: 70px 0px;
+    gap: 20px;
+}
+
+.hero .hero-content .hero-call, .hero .hero-content .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero .hero-content .hero-call h1 { 
+    color: rgb(255, 255, 255);
+    
+    text-shadow: 10px 0px 20px rgb(239, 41, 41);
+    
+    font-size: 56px;
+    font-family: 'Kawashiro Gothic', sans-serif;
+}
+.hero .hero-content .hero-call p {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+}
+
+.hero .hero-content .hero-text p {
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+
+    margin-top: 4px;
+
+    color: #ecd5a4;
+    text-shadow: 0 0 1px transparent, 0 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.hero .hero-content button {
+    font-family: 'Kawashiro Gothic', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+
+    margin-top: 22px;
+
+    background-image: linear-gradient(90deg, rgb(247, 176, 44) 45%, 80%, rgb(212, 83, 83));
+    border: 2px solid white;
+    border-radius: 10px;
+
+    padding: 18px;
+    cursor: pointer;
+}
+
+.hero .hero-content .hero-image img {
+    width: 420px;
+    height: 300px;
+
+    border-radius: 10px;
+}
+
+
+.cards {
+    height: auto;
+    padding: 20px 120px;
+
+    /* background-color: rgb(244, 104, 29); */
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.9)
+      ), url('./Images/industriebackground.png');
+    background-size: cover;
+
+    flex-direction: column;
+    gap: 32px;
+}
+
+.cards .cards-info h3 {
+    text-align: center;
+
+    font-family: 'Kawashiro Gothic', sans-serif;
+    font-size: 24px;
+}
+
+.cards .cards-row {
+    display: flex;
+    justify-content: center;
+
+    gap: 80px;
+}
+
+.cards .cards-row .cards-box img {
+    width: 200px;
+    height: auto;
+
+    border: 3px solid black;
+    border-radius: 20px;
+    filter: invert(10%) sepia(40%) saturate(0%) hue-rotate(200deg) brightness(100%) contrast(92%);
+}
+
+.cards .cards-row .cards-box img:hover {
+    filter: none;
+}
+
+.cards .cards-row .cards-box p {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Kawashiro Gothic', sans-serif;
+    font-size: 17px;
+
+    margin-top: 8px;
+}
+
+/* ---- CARD UNIQUE ---- */
+
+.cards .cards-row .cards-box img:hover~#hunter {
+    text-shadow: 1px 1px 10px rgb(249, 59, 59);
+}
+
+.cards .cards-row .cards-box img:hover~#researcher {
+    text-shadow: 1px 1px 10px rgb(84, 249, 59);
+}
+
+.cards .cards-row .cards-box img:hover~#disruptor {
+    text-shadow: 1px 1px 10px rgb(179, 59, 249);
+}
+
+/* ---- CARD UNIQUE ---- */
+
+.cards .cards-row .cards-box p {
+    color: white
+}
