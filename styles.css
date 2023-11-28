@@ -199,9 +199,9 @@
 }
 .infoworld .world-ilustration .ilustration-card {
     display: flex;
-
+    flex-direction: column;
 }
-.infoworld .world-ilustration .ilustration-card .wrapper {
+.infoworld .world-ilustration .ilustration-card {
     max-width: 380px;
 }
 .infoworld .world-ilustration .ilustration-card img {
@@ -209,13 +209,40 @@
     transition: transform 0.5s;
 }
 .infoworld .world-ilustration .ilustration-card img:hover {
-    transform: scale(0.99);
+    transform: scale(1.05);
+    cursor: pointer;
 }
+.infoworld .world-ilustration .ilustration-card .placeName {
+    font-size: 24px;
+
+    margin-top: 18px;
+    margin-bottom: 4px;
+}
+    .infoworld .world-ilustration .ilustration-card p {
+    font-size: 16px;
+    color: rgb(230, 222, 222);
+}   
 
 
 /* ---- IMAGE UNIQUE ---- */
 #coral {
+    border: 2px solid #a4d5ec;
+}
+#base {
+    border: 2px solid green;
+}
+#rotten {
+    border: 2px solid rgb(74, 10, 10);
+}
 
+#coralName {
+    color: palevioletred;
+}
+#baseName {
+    color: greenyellow;
+}
+#rottenName {
+    color: rgb(152, 18, 18);
 }
 /* ---- IMAGE UNIQUE ---- */
 
