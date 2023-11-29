@@ -1,0 +1,4 @@
+• --- Anotações para Melhoria. (E)
+O produto apresentado não fica claro no início, não se sabe exatamente qual é o jogo. O nome MONSTROMICON deveria estar mais claro de alguma forma dentro da página.
+
+A fonte da palavra Monstromicon está distoante na navbar.
