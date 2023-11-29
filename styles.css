@@ -30,6 +30,7 @@
     background-size: cover;
 
     border-top: 3px solid black;
+    border-bottom: 3px solid black;
 }
 
 .container {
@@ -247,25 +248,32 @@
 /* ---- IMAGE UNIQUE ---- */
 
 .cards {
-    height: auto;
     padding: 20px 120px;
 
+    border-top: 3px solid black;
     /* background-color: rgb(244, 104, 29); */
     background: linear-gradient(
-        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.2), 
         rgba(0, 0, 0, 0.9)
       ), url('./Images/industriebackground.png');
     background-size: cover;
 
     flex-direction: column;
-    gap: 32px;
+    justify-content: center;
+    gap: 48px;
 }
-
 .cards .cards-info h3 {
     text-align: center;
+    color: white;
 
     font-family: 'Kawashiro Gothic', sans-serif;
-    font-size: 24px;
+    font-size: 34px;
+}
+.cards .cards-info p {
+    text-align: center;
+    font-size: 17px;
+
+    color: var(--subTextColor);
 }
 
 .cards .cards-row {
@@ -283,11 +291,9 @@
     border-radius: 20px;
     filter: invert(10%) sepia(40%) saturate(0%) hue-rotate(200deg) brightness(100%) contrast(92%);
 }
-
 .cards .cards-row .cards-box img:hover {
     filter: none;
 }
-
 .cards .cards-row .cards-box p {
     text-align: center;
     text-transform: uppercase;
@@ -314,5 +320,55 @@
 /* ---- CARD UNIQUE ---- */
 
 .cards .cards-row .cards-box p {
-    color: white
+    color: white;
+}
+
+.cta {
+    height: 60vh;
+    background-color: blue;
+
+    padding-right: 200px;
+
+    justify-content: flex-end;
+    align-items: center;
+
+    border-top: 3px solid black;
+    font-family: 'Kawashiro Gothic', sans-serif;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.2), 
+        rgba(0, 0, 0, 0.4)
+      ), url('./Images/LandCTA.png');
+      background-size: cover;
+}
+
+.cta .cta-thing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 32px;
+}
+.cta .cta-thing p {
+    font-size: 32px;
+    color: white;
+}
+.cta .cta-thing button {
+    font-size: 18px;
+    cursor: pointer;
+
+    width: 75%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 3px solid white;
+
+    background-image: linear-gradient(90deg, rgb(247, 176, 44) 45%, 80%, rgb(212, 83, 83));
+    color: rgb(255, 255, 255);
+}
+
+.footer {
+    color: white;
+    background-color: #2556a4;
+    text-align: center;
+
+    padding: 5px;
 }
