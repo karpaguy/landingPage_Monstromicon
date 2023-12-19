@@ -4,7 +4,7 @@
 <img src="https://i.imgur.com/qkjuhAa.png">
 
 I will be writing down the feedback that i've gathered to improve the website. No names will be provided for privacy reasons.
-→ Person N° 01
-    • The product presented is not clear at first, it is not known exactly what the game is;
-    • The name MONSTROMICON should be clearer somehow within the page;
-    • The font of the word Monstromicon "feels off" in the navbar.
+* → Person N° 01
+    * The product presented is not clear at first, it is not known exactly what the game is;
+    * The name MONSTROMICON should be clearer somehow within the page;
+    * The font of the word Monstromicon "feels off" in the navbar.
