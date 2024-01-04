@@ -68,8 +68,9 @@
 
 .navbar .header-logo p {
     font-size: 24px;
-    font-style: italic;
     margin-left: 6px;
+
+    font-family: 'Syne Tactile', sans-serif;
 }
 
 .navbar .header-logo img {
@@ -125,7 +126,7 @@
 }
 .hero .hero-content .hero-call p {
     color: rgb(255, 255, 255);
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .hero .hero-content .hero-text p {
